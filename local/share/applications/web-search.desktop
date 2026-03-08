@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=🔍 Search Web
+Comment=Search the web with Brave
+Exec=brave --new-window https://google.com
+Icon=web-browser
+Type=Application
+Categories=Network;
+NoDisplay=false

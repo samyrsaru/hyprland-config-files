@@ -1,0 +1,63 @@
+# Shared shell configuration
+
+# Aliases
+alias update-pac="sudo pacman -Syu"
+alias update-yay="yay"
+
+alias install-pac='sudo pacman --needed -S'
+alias uninstall-pac='sudo pacman -Rns'
+alias install-aur='yay -S'
+alias uninstall-aur='yay -Rns'
+
+alias current-theme='gsettings get org.gnome.desktop.interface gtk-theme'
+alias hetzner="ssh samyr@46.62.170.94"
+
+# SSH port forwarding to Hetzner VPS
+hetzner-port() {
+    if [ -z "$1" ]; then
+        echo "Usage: hetzner-port <port>"
+        return 1
+    fi
+    ssh -L "$1:localhost:$1" samyr@46.62.170.94
+}
+alias hp='hetzner-port'
+
+
+alias grep='grep --color=auto'
+alias find="rg -i"
+alias n="nvim"
+alias ls='ls --color=auto'
+alias lsa='ls -al'
+alias cd='z'
+
+# Battery charge control aliases
+alias battery-balanced='echo "40 80" | sudo tee /sys/devices/platform/huawei-wmi/charge_control_thresholds'
+alias battery-travel='echo "0 100" | sudo tee /sys/devices/platform/huawei-wmi/charge_control_thresholds'
+alias battery-storage='echo "45 55" | sudo tee /sys/devices/platform/huawei-wmi/charge_control_thresholds'
+alias battery-max-life='echo "50 60" | sudo tee /sys/devices/platform/huawei-wmi/charge_control_thresholds'
+alias battery-status='cat /sys/devices/platform/huawei-wmi/charge_control_thresholds'
+
+# Battery monitoring alias
+alias battery='echo "Battery: $(cat /sys/class/power_supply/BAT*/capacity)% | Status: $(cat /sys/class/power_supply/BAT*/status) | AC: $(cat /sys/class/power_supply/A*/online)"'
+alias disk='df -h / /home'
+
+# Obsidian
+alias obsidian-save='cd ~/git/obsidian/brain && git add -A && git commit -m "vault backup: $(date +"%Y-%m-%d %H:%M:%S")" && git push'
+
+# Browser
+export BROWSER=brave
+
+# Git branch in prompt
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+export PS1='\[\033[1;36m\]\W\[\033[0m\]\[\033[1;32m\]$(parse_git_branch)\[\033[0m\] $ '
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+
+if uwsm check may-start; then
+    exec uwsm start hyprland.desktop
+fi

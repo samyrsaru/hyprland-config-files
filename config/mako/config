@@ -1,0 +1,69 @@
+# Mako configuration
+
+# Default timeout for notifications (milliseconds)
+default-timeout=10000
+
+# Maximum number of visible notifications
+max-visible=5
+
+# Appearance
+background-color=#1e1e2e
+text-color=#cdd6f4
+border-color=#89b4fa
+border-size=3
+border-radius=15
+width=400
+height=150
+padding=20
+margin=15
+
+# Font
+font=Inter 12
+
+# Positioning
+anchor=top-right
+
+# Actions
+actions=1
+
+# Icons
+icons=1
+max-icon-size=64
+icon-path=/usr/share/icons/Papirus-Dark
+
+# Progress bar
+progress-color=#89b4fa
+
+# Group notifications
+group-by=app-name
+
+# History
+max-history=100
+
+# Styling for different urgency levels
+[urgency=low]
+background-color=#313244
+border-color=#6c7086
+default-timeout=5000
+
+[urgency=normal]
+background-color=#1e1e2e
+border-color=#89b4fa
+default-timeout=10000
+
+[urgency=critical]
+background-color=#f38ba8
+text-color=#11111b
+border-color=#f38ba8
+default-timeout=0
+
+# App-specific styling
+[app-name="Spotify"]
+background-color=#1db954
+text-color=#ffffff
+border-color=#1ed760
+
+[app-name="Volume"]
+background-color=#89b4fa
+text-color=#11111b
+border-color=#74c7ec

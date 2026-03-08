@@ -1,0 +1,17 @@
+Backup created: Sun Mar  8 01:52:08 PM EET 2026
+Location: ~/backup_fresh
+
+Contents:
+- dotfiles/      : Shell configs (.bashrc, .zshrc, .shell_common, .gitconfig, etc.)
+- config/        : Application configs (hypr, waybar, kitty, nvim, rofi, etc.)
+- ssh/           : SSH keys and config
+- gnupg/         : GPG keys
+- scripts/       : Custom scripts
+- wallpapers/    : Wallpapers
+- local/share/   : Applications, fonts, themes, icons
+
+Package lists:
+- pacman-packages.txt : Official packages
+- aur-packages.txt    : AUR packages (if yay was installed)
+
+To restore after reinstall, see RESTORE.md

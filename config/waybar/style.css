@@ -1,0 +1,200 @@
+/* -- Global rules -- */
+* {
+  border: none;
+  font-family: "SF Pro text", "JetbrainsMono Nerd Font", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  min-height: 10px;
+  padding: 0 5px;
+  margin: 0 4px;
+}
+
+window#waybar {
+  background: rgba(34, 36, 54, 0.6);
+  color: #fff;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+#custom-search {
+  padding-left: 0px;
+  color: #89B4FA;
+}
+
+#battery {
+  margin: 6px 0;
+}
+
+#battery.warning {
+  color: #F38BA8;
+  background: rgba(243, 139, 168, 0.2);
+  border: 1px solid #F38BA8;
+  border-radius: 8px;
+  padding: 0px 10px;
+}
+
+#battery.critical {
+  color: #F38BA8;
+  background: rgba(243, 139, 168, 0.3);
+  border: 1px solid #F38BA8;
+  border-radius: 8px;
+  padding: 0px 10px;
+  animation: blink 1s ease-in-out infinite alternate;
+}
+
+#battery.charging {
+  color: #A6E3A1;
+  background: none;
+  border: none;
+}
+
+#custom-archicon {
+  font-size: 20px;
+  color: #89B4FA;
+  padding-right: 17px;
+}
+
+#cpu {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  font-weight: bold;
+  color: #89B4FA;
+  margin: 6px 0;
+}
+
+#cpu.critical {
+  background: rgba(243, 139, 168, 0.2);
+  border: 1px solid #F38BA8;
+  color: #F38BA8;
+  animation: blink 1s ease-in-out infinite alternate;
+}
+
+#memory {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  font-weight: bold;
+  color: #CBA6F7;
+  margin: 6px 8px;
+  padding: 0px 10px;
+}
+
+#memory.warning {
+  background: rgba(250, 179, 135, 0.2);
+  border: 1px solid #FAB387;
+  color: #FAB387;
+}
+
+#memory.critical {
+  background: rgba(243, 139, 168, 0.2);
+  border: 1px solid #F38BA8;
+  color: #F38BA8;
+  animation: blink 1s ease-in-out infinite alternate;
+}
+
+#disk {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  font-weight: bold;
+  color: #A6E3A1;
+  margin: 6px 0;
+  padding: 0px 10px;
+}
+
+#disk.warning {
+  background: rgba(250, 179, 135, 0.2);
+  border: 1px solid #FAB387;
+  color: #FAB387;
+}
+
+#disk.critical {
+  background: rgba(243, 139, 168, 0.2);
+  border: 1px solid #F38BA8;
+  color: #F38BA8;
+  animation: blink 1s ease-in-out infinite alternate;
+}
+
+#temperature {
+  background: #F8BD96;
+}
+
+#workspaces {
+  margin: 6px 5px;
+}
+
+#workspaces button {
+  background: transparent;
+  padding: 4px 0;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+  margin: 0 2px;
+  color: #fff;
+}
+
+window#waybar #workspaces button.occupied {
+  color: #f00;
+  background: #0f0;
+}
+
+window#waybar #workspaces button.active {
+  color: #000;
+  background: #fff;
+  padding: 4px 12px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+#workspaces button:hover {
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+/* Modules right */
+#taskbar {
+  background: transparent;
+  border-radius: 10px;
+  padding: 0px 5px;
+  margin: 6px 5px;
+}
+
+#taskbar button {
+  padding: 0px 5px;
+  margin: 0px 3px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+#taskbar button.active {
+  background: rgba(34, 36, 54, 0.5);
+}
+
+#taskbar button:hover {
+  background: rgba(137, 180, 250, 0.3);
+}
+
+#pulseaudio,
+#backlight {
+	min-width: 70px;
+}
+
+/* === Optional animation === */
+@keyframes blink {
+  to {
+    background-color: #BF616A;
+    color: #B5E8E0;
+  }
+}
+
+window#waybar #workspaces button.hidden {
+    opacity: 0;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}

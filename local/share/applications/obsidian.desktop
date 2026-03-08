@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Obsidian
+Exec=/home/samyr/.local/bin/Obsidian.AppImage
+Icon=obsidian
+Comment=A powerful knowledge base that works on top of a local folder of plain text Markdown files
+Categories=Office;TextEditor;
+StartupNotify=true
+MimeType=x-scheme-handler/obsidian;

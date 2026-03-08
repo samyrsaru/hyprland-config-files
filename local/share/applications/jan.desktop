@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Jan
+Comment=AI Desktop App
+Exec=/home/samyr/.local/bin/jan
+Icon=jan
+Terminal=false
+Type=Application
+Categories=Development;Utility;

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Gemini
+Comment=Open Gemini in a new Brave tab
+Exec=firefox https://gemini.google.com
+Icon=firefox
+Terminal=false
+Type=Application
+Categories=Network;WebBrowser;

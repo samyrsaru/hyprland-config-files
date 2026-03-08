@@ -1,0 +1,15 @@
+[Desktop Entry]
+
+Type=Application
+
+Version=1.0
+
+Name=Meteoblue
+
+Categories=WebBrowser;
+
+Exec=firefox --new-window https://www.meteoblue.com/ro/
+
+Terminal=false
+
+Icon=firefox

@@ -1,0 +1,24 @@
+  [opener]
+  edit = [
+      { run = 'nvim "$@"', block = true, desc = "nvim" },
+  ]
+
+  text = [
+      { run = 'nvim "$@"', block = true, desc = "nvim" },
+  ]
+
+  [open]
+  rules = [
+      { mime = "text/*", use = "edit" },
+      { mime = "application/json", use = "edit" },
+      { name = "*.{md,txt,conf,cfg,ini,toml,yaml,yml}", use = "edit" },
+  ]
+
+  [manager]
+  show_hidden = true
+
+  [plugin]
+  ignore = [
+	".cache/",
+	"node_modules/"
+  ]

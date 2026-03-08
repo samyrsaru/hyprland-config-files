@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=CapCut
+Exec=env "WINEPREFIX=/home/samyr/.wine" wine "C:\\\\users\\\\samyr\\\\AppData\\\\Roaming\\\\Microsoft\\\\Windows\\\\Start Menu\\\\Programs\\\\CapCut\\\\CapCut.lnk"
+Type=Application
+StartupNotify=true
+Path=/home/samyr/.wine/drive_c/users/samyr/AppData/Local/CapCut/Apps/7.5.0.3053/CapCut.exe
+Icon=8FB5_CapCut.0
+StartupWMClass=capcut.exe

@@ -1,0 +1,13 @@
+[Unit]
+Description=Battery History Monitor
+After=multi-user.target
+
+[Service]
+Type=simple
+User=samyr
+ExecStart=/usr/bin/python3 /home/samyr/scripts/battery_history.py --monitor --interval 300
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

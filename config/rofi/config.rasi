@@ -1,0 +1,15 @@
+configuration {
+    modes: "drun,calc,run,window,ssh,filebrowser";
+    show-icons: true;
+    icon-theme: "Adwaita-Dark";
+    display-drun: " Apps";
+    display-run: "$ Run";
+    display-window: " Windows";
+    display-ssh: "󱘖 SSH";
+    display-filebrowser: " Files";
+    display-calc: " Calc";  
+    display-search: "󰖟 Search web";
+    show-match: false;
+}
+
+@theme "/home/samyr/.local/share/rofi/themes/sam-custom-new.rasi"

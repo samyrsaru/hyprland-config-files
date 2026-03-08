@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Google Calendar
+Comment=Access Google Calendar
+Exec=firefox --new-window https://calendar.google.com
+Icon=firefox
+Terminal=false
+Type=Application
+Categories=Web;Network;

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="ftps://192.168.0.108/" added="2025-11-12T18:55:02.328585Z" modified="2025-11-12T18:55:02.328598Z" visited="2025-11-12T18:55:02.328591Z">
+    <title>/ on 192.168.0.108</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2025-11-12T18:55:02.328594Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="sftp://samyr@46.62.170.94/" added="2026-02-23T07:53:34.195812Z" modified="2026-02-23T07:53:34.195837Z" visited="2026-02-23T07:53:34.195820Z">
+    <title>/ on 46.62.170.94</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2026-02-23T07:53:34.195823Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

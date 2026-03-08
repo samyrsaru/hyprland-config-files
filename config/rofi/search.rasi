@@ -1,0 +1,5 @@
+@import "~/.config/rofi/config.rasi"
+
+mainbox {
+    children: [inputbar];
+}
